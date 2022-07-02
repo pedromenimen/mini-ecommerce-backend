@@ -1,1 +1,1 @@
-web: gunicorn mini_ecommerce.wsgi
+web: gunicorn mini_ecommerce.wsgi --log-file -
