@@ -1,0 +1,1 @@
+web gunicorn backend.mini_ecommerce.wsgi
