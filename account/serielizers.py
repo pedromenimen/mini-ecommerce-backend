@@ -1,4 +1,3 @@
-from address.exceptions import InvalidCepException
 from address.models import Address
 from address.serializers import ListCreateAddressSerializer
 from rest_framework import serializers

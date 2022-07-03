@@ -8,19 +8,7 @@ from address.models import Address
 class ListCreateAddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
-        fields = ["id", "cep", "number", "name"]
-
-    def validate(self, attrs):
-        cep = cep_verifyer(attrs["cep"])
-        if hasattr(cep, "error"):
-            raise InvalidCepException
-        return super().validate(attrs)
-
-
-class RetrieveUpdateDestroySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Address
-        fields = "__all__"
+        fields = ["id", "cep", "number"]
 
     def validate(self, attrs):
         cep = cep_verifyer(attrs["cep"])
