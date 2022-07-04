@@ -1,3 +1,4 @@
+from stat import UF_APPEND
 from unicodedata import name
 from uuid import uuid4
 
@@ -12,6 +13,10 @@ class Address(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     cep = models.CharField(max_length=8, validators=[MinLengthValidator(8)])
     number = models.CharField(max_length=15)
+    cidade = models.CharField(max_length=255)
+    rua = models.CharField(max_length=255)
+    uf = models.CharField(max_length=2)
+    bairro = models.CharField(max_length=255)
 
     def __str__(self):
         return self.cep
