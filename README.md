@@ -24,3 +24,37 @@ Para usar a api localmente basta digitar os seguintes comandos no terminal
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py runserver
+
+## Endpoints da api
+### /api/users/register/
+Rota responsável pela criação de usuários
+Métodos permitidos: POST
+Corpo da requisição:
+
+
+```
+{
+ ​"email​": ​string​,
+ ​"password​": ​string​,
+ ​"name​": ​string​,
+ ​"address​": ​{
+   ​"cep​": ​string​,
+   ​"number​": ​string​,
+   ​"bairro​": ​string​,
+   ​"cidade​": ​string​,
+   ​"rua​": ​string​,
+   ​"uf​": ​string​,
+ ​}​,
+}​;
+```
+### /api/users/login/
+Rota responsável pelo login de usuários
+Métodos permitidos:POST
+Corpo da requisição:
+
+```
+{
+    "email​": ​string​,
+    "password​": ​string​,
+}
+```
