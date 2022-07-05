@@ -28,7 +28,9 @@ Para usar a api localmente basta digitar os seguintes comandos no terminal
 ## Endpoints da api
 ### /api/users/register/
 Rota responsável pela criação de usuários
+
 Métodos permitidos: POST
+
 Corpo da requisição:
 
 
@@ -49,7 +51,9 @@ Corpo da requisição:
 ```
 ### /api/users/login/
 Rota responsável pelo login de usuários
+
 Métodos permitidos:POST
+
 Corpo da requisição:
 
 ```
