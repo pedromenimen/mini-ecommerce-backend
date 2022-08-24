@@ -94,6 +94,8 @@ DATABASES = {
     }
 }
 
+
+
 DATABASE_URL = getenv("DATABASE_URL")
 
 if DATABASE_URL:

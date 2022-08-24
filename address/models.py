@@ -1,5 +1,3 @@
-from stat import UF_APPEND
-from unicodedata import name
 from uuid import uuid4
 
 from django.core.validators import MinLengthValidator

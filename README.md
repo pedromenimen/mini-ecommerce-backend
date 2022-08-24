@@ -10,7 +10,7 @@ O link da API é https://mini-ecommerce-bemol.herokuapp.com
 ## Bibliotecas usadas
 - Faker (mock dos testes)
 - SQLite3 (banco de dados local e para testes)
-- PotsgreSQL (banco de dados na nuvem(heroku))
+- PotsgreSQL he(banco de dados na nuvem(heroku))
 - gunicorn (deploy)
 - python-dotenv (SECRET_KEY no arquivo .env)
 - django-cors-headers (Pra resolver problemas relacionados ao CORS)
